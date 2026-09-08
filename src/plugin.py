@@ -5,14 +5,14 @@
 from Plugins.Plugin import PluginDescriptor
 from . import ConfigInit  # noqa: F401, pylint: disable=unused-import
 from .Debug import logger
-from .Version import VERSION
+from .Version import PLUGIN, VERSION
 from . import _
 from .TVMagazineCockpit import TVMagazineCockpit
 from .Cache import Cache
 from .SkinUtils import loadPluginSkin
 
 
-loadPluginSkin()
+loadPluginSkin(PLUGIN)
 
 
 cache_instance = None
@@ -37,7 +37,7 @@ def autoStart(reason, **kwargs):
 
 
 def Plugins(**__kwargs):
-    return [
+    descriptors = [
         PluginDescriptor(
             where=[
                 PluginDescriptor.WHERE_AUTOSTART,
@@ -58,3 +58,14 @@ def Plugins(**__kwargs):
             needsRestart=True
         ),
     ]
+    try:
+        descriptors += [
+            PluginDescriptor(
+                where=PluginDescriptor.WHERE_SKINCHANGE,
+                fnc=loadPluginSkin
+            )
+        ]
+    except Exception:
+        pass
+
+    return descriptors
