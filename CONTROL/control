@@ -2,4 +2,4 @@ Description: TVMagazineCockpit
 Maintainer: xcentaurix
 Package: enigma2-plugin-extensions-tvmagazinecockpit
 Architecture: all
-Depends: enigma2-plugin-skincomponents-cockpit, enigma2-plugin-systemplugins-covercockpit
+Depends: enigma2-plugin-skincomponents-componentscockpit, enigma2-plugin-systemplugins-covercockpit

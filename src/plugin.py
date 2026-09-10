@@ -52,7 +52,7 @@ def Plugins(**__kwargs):
                 PluginDescriptor.WHERE_PLUGINMENU,
                 PluginDescriptor.WHERE_EXTENSIONSMENU,
             ],
-            icon="TVMagazineCockpit.png",
+            icon="plugin.png",
             description=_("Browse TV Magazine"),
             fnc=main,
             needsRestart=True
