@@ -6,3 +6,10 @@ skin:
         file: "screen_TVMagazineCockpit.ymlinc"
     - xmlinc:
         file: "screen_EventDetails.ymlinc"
+    - xmlinc:
+        file: "screen_CockpitPlayer.ymlinc"
+        imagepath: "/usr/lib/enigma2/python/Plugins/SystemPlugins/ComponentsCockpit/skin/images"
+    - xmlinc:
+        file: "screen_CockpitPlayerSummary.ymlinc"
+    - xmlinc:
+        file: "screen_ScreenPVRState.ymlinc"
