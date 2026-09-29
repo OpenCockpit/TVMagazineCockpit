@@ -50,7 +50,7 @@ class Picture(WebRequests):
                     self.sc[0], self.sc[1],
                     False,
                     1,
-                    "#ff000000"
+                    "#00000000"
                 )
             )
             picload.startDecode(path)  # Asynchronous call

@@ -43,6 +43,7 @@ screen:
         size: "1230,560"
         transparent: "1"
     - widget:
+        alphatest: "blend"
         name: "programpix"
         position: "1270,70"
         scaleFlags: "scaleCenter"

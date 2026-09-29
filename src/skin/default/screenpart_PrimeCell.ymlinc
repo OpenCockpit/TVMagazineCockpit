@@ -1,13 +1,13 @@
 - widget:
-    alphatest: "on"
+    alphatest: "blend"
     name: "picon$index"
-    position: "5,66"
+    position: "5,65"
     scaleFlags: "scaleCenter"
     size: "80,48"
 - widget:
-    alphatest: "on"
+    alphatest: "blend"
     name: "programpix$index"
-    position: "115,66"
+    position: "115,65"
     scaleFlags: "scaleCenter"
     size: "200,133"
 - widget:

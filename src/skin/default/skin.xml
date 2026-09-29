@@ -20,37 +20,37 @@
 		<widget font="Bold;38" position="10,0" render="Label" size="1900,55" source="Title" transparent="1" valign="center" zPosition="1"/>
 		<eLabel backgroundColor="separator" position="0,54" size="1920,2"/>
 		<widget font="Regular;20" halign="right" name="day_selector" position="1490,15" size="420,26" transparent="1" valign="center" zPosition="2"/>
-		<widget alphatest="on" name="picon0" position="5,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix0" position="115,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="blend" name="picon0" position="5,65" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="blend" name="programpix0" position="115,65" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel0" position="5,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time0" position="5,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description0" position="5,211" size="310,50" transparent="1"/>
-		<widget alphatest="on" name="picon1" position="325,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix1" position="435,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="blend" name="picon1" position="325,65" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="blend" name="programpix1" position="435,65" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel1" position="325,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time1" position="325,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description1" position="325,211" size="310,50" transparent="1"/>
-		<widget alphatest="on" name="picon2" position="645,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix2" position="755,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="blend" name="picon2" position="645,65" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="blend" name="programpix2" position="755,65" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel2" position="645,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time2" position="645,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description2" position="645,211" size="310,50" transparent="1"/>
-		<widget alphatest="on" name="picon3" position="965,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix3" position="1075,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="blend" name="picon3" position="965,65" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="blend" name="programpix3" position="1075,65" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel3" position="965,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time3" position="965,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description3" position="965,211" size="310,50" transparent="1"/>
-		<widget alphatest="on" name="picon4" position="1285,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix4" position="1395,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="blend" name="picon4" position="1285,65" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="blend" name="programpix4" position="1395,65" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel4" position="1285,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time4" position="1285,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description4" position="1285,211" size="310,50" transparent="1"/>
-		<widget alphatest="on" name="picon5" position="1605,66" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="on" name="programpix5" position="1715,66" scaleFlags="scaleCenter" size="200,133"/>
+		<widget alphatest="blend" name="picon5" position="1605,65" scaleFlags="scaleCenter" size="80,48"/>
+		<widget alphatest="blend" name="programpix5" position="1715,65" scaleFlags="scaleCenter" size="200,133"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="channel5" position="1605,123" size="110,46" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="time5" position="1605,176" size="95,28" transparent="1"/>
 		<widget font="Regular;20" foregroundColor="yellow" name="description5" position="1605,211" size="310,50" transparent="1"/>
-		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="0,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list0" transparent="1">
+		<widget backgroundColorSelected="blue" enableWrapAround="1" position="0,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list0" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -67,7 +67,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="320,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list1" transparent="1">
+		<widget backgroundColorSelected="blue" enableWrapAround="1" position="320,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list1" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -84,7 +84,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="640,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list2" transparent="1">
+		<widget backgroundColorSelected="blue" enableWrapAround="1" position="640,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list2" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -101,7 +101,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="960,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list3" transparent="1">
+		<widget backgroundColorSelected="blue" enableWrapAround="1" position="960,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list3" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -118,7 +118,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="1280,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list4" transparent="1">
+		<widget backgroundColorSelected="blue" enableWrapAround="1" position="1280,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list4" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -135,7 +135,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="keyBlue" enableWrapAround="1" position="1600,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list5" transparent="1">
+		<widget backgroundColorSelected="blue" enableWrapAround="1" position="1600,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list5" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -170,7 +170,7 @@
 		<widget font="Regular;32" name="subtitle" position="150,125" size="1100,37" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;32" name="duration" position="150,170" size="300,37" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;32" name="description" position="20,230" size="1230,560" transparent="1"/>
-		<widget name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
+		<widget alphatest="blend" name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
 		<eLabel backgroundColor="separator" position="0,874" size="1800,2"/>
 		<eLabel backgroundColor="backgroundDark" position="0,875" size="1800,55"/>
 		<widget conditional="key_red" font="Regular;32" foregroundColor="red" halign="center" name="key_red" position="0,882" size="405,38" transparent="1" valign="center" zPosition="2"/>

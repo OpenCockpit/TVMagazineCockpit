@@ -27,7 +27,7 @@ screen:
         range: [0, 5]
         body:
           - widget:
-              backgroundColorSelected: "keyBlue"
+              backgroundColorSelected: "$backgroundColorSelected"
               enableWrapAround: "1"
               position: "eval($i*320),275"
               render: "Listbox"

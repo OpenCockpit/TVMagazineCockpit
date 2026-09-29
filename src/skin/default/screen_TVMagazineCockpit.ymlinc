@@ -39,7 +39,7 @@ screen:
         index: "5"
         position: "5*$screen_width/6,0"
     - widget:
-        backgroundColorSelected: "keyBlue"
+        backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
         position: "eval(0*320),275"
         render: "Listbox"
@@ -51,7 +51,7 @@ screen:
           - xmlinc:
               file: "screenpart_EventCell.ymlinc"
     - widget:
-        backgroundColorSelected: "keyBlue"
+        backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
         position: "eval(1*320),275"
         render: "Listbox"
@@ -63,7 +63,7 @@ screen:
           - xmlinc:
               file: "screenpart_EventCell.ymlinc"
     - widget:
-        backgroundColorSelected: "keyBlue"
+        backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
         position: "eval(2*320),275"
         render: "Listbox"
@@ -75,7 +75,7 @@ screen:
           - xmlinc:
               file: "screenpart_EventCell.ymlinc"
     - widget:
-        backgroundColorSelected: "keyBlue"
+        backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
         position: "eval(3*320),275"
         render: "Listbox"
@@ -87,7 +87,7 @@ screen:
           - xmlinc:
               file: "screenpart_EventCell.ymlinc"
     - widget:
-        backgroundColorSelected: "keyBlue"
+        backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
         position: "eval(4*320),275"
         render: "Listbox"
@@ -99,7 +99,7 @@ screen:
           - xmlinc:
               file: "screenpart_EventCell.ymlinc"
     - widget:
-        backgroundColorSelected: "keyBlue"
+        backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
         position: "eval(5*320),275"
         render: "Listbox"
