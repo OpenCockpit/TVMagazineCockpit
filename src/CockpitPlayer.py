@@ -1,5 +1,3 @@
-# !/usr/bin/python
-# coding=utf-8
 # Copyright (C) 2018-2026 by xcentaurix
 # License: GNU General Public License v3.0
 
@@ -15,10 +13,6 @@ class CockpitPlayer(MoviePlayer, InfoBarServiceErrorPopupSupport):
         logger.info("...")
         MoviePlayer.__init__(self, session, service)
         InfoBarServiceErrorPopupSupport.__init__(self)
-        InfoBarServiceErrorPopupSupport.STATE_TUNING = ""
-        InfoBarServiceErrorPopupSupport.STATE_CONNECTING = ""
-        InfoBarServiceErrorPopupSupport.MESSAGE_WAIT = ""
-        InfoBarServiceErrorPopupSupport.STATE_RECONNECTING = ""
         self.skinName = "MoviePlayer"
 
         self["CockpitPlayerActions"] = ActionMap(
