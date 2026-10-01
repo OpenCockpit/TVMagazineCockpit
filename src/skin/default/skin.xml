@@ -56,12 +56,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -73,12 +73,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -90,12 +90,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -107,12 +107,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -124,12 +124,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -141,12 +141,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [gFont("Regular",23), gFont("Regular",20), gFont("Regular",17)],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -154,12 +154,12 @@
 		</widget>
 		<eLabel backgroundColor="separator" position="0,1024" size="1920,2"/>
 		<eLabel backgroundColor="backgroundDark" position="0,1025" size="1920,55"/>
-		<widget conditional="key_red" font="Regular;32" foregroundColor="red" halign="center" name="key_red" position="0,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_green" font="Regular;32" foregroundColor="green" halign="center" name="key_green" position="435,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_yellow" font="Regular;32" foregroundColor="yellow" halign="center" name="key_yellow" position="870,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_blue" font="Regular;32" foregroundColor="blue" halign="center" name="key_blue" position="1305,1032" size="435,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_menu" font="Regular;32" foregroundColor="white" halign="center" name="key_menu" position="1740,1032" size="90,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_info" font="Regular;32" foregroundColor="white" halign="center" name="key_info" position="1830,1032" size="90,38" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_red" font="Regular;32" foregroundColor="red" halign="center" name="key_red" position="0,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_green" font="Regular;32" foregroundColor="green" halign="center" name="key_green" position="435,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_yellow" font="Regular;32" foregroundColor="yellow" halign="center" name="key_yellow" position="870,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_blue" font="Regular;32" foregroundColor="blue" halign="center" name="key_blue" position="1305,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_menu" font="Regular;32" foregroundColor="white" halign="center" name="key_menu" position="1740,1025" size="90,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_info" font="Regular;32" foregroundColor="white" halign="center" name="key_info" position="1830,1025" size="90,55" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<screen backgroundColor="backgroundMedium" flags="wfNoBorder" name="EventDetails" position="center,center" resolution="1920,1080" size="1800,930">
 		<eLabel backgroundColor="backgroundDark" position="0,0" size="1800,55"/>
@@ -173,11 +173,11 @@
 		<widget alphatest="blend" name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
 		<eLabel backgroundColor="separator" position="0,874" size="1800,2"/>
 		<eLabel backgroundColor="backgroundDark" position="0,875" size="1800,55"/>
-		<widget conditional="key_red" font="Regular;32" foregroundColor="red" halign="center" name="key_red" position="0,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_green" font="Regular;32" foregroundColor="green" halign="center" name="key_green" position="405,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_yellow" font="Regular;32" foregroundColor="yellow" halign="center" name="key_yellow" position="810,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_blue" font="Regular;32" foregroundColor="blue" halign="center" name="key_blue" position="1215,882" size="405,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_menu" font="Regular;32" foregroundColor="white" halign="center" name="key_menu" position="1620,882" size="90,38" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_info" font="Regular;32" foregroundColor="white" halign="center" name="key_info" position="1710,882" size="90,38" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_red" font="Regular;32" foregroundColor="red" halign="center" name="key_red" position="0,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_green" font="Regular;32" foregroundColor="green" halign="center" name="key_green" position="405,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_yellow" font="Regular;32" foregroundColor="yellow" halign="center" name="key_yellow" position="810,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_blue" font="Regular;32" foregroundColor="blue" halign="center" name="key_blue" position="1215,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_menu" font="Regular;32" foregroundColor="white" halign="center" name="key_menu" position="1620,875" size="90,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_info" font="Regular;32" foregroundColor="white" halign="center" name="key_info" position="1710,875" size="90,55" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 </skin>

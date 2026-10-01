@@ -7,35 +7,34 @@ convert:
     border:
       width: 1
       color: 0x595959
-      font: "Regular;20"
+      font: "$FR_verysmall"
       flags: RT_VALIGN_CENTER
     fonts:
-      - "Regular;23"
-      - "Regular;20"
-      - "Regular;17"
+      - "$FR_small"
+      - "$FR_verysmall"
     fields:
       - text:
           position: "5,5"
           size: "55,25"
-          font: "Regular;20"
+          font: "$FR_verysmall"
           flags: RT_HALIGN_LEFT|RT_VALIGN_CENTER
           value: 0
       - text:
           position: "5,32"
           size: "55,20"
-          font: "Regular;17"
+          font: "$FR_verysmall"
           flags: RT_HALIGN_LEFT|RT_VALIGN_CENTER
           value: 9
       - text:
           position: "65,5"
           size: "245,75"
-          font: "Regular;23"
+          font: "$FR_small"
           flags: RT_HALIGN_LEFT|RT_WRAP
           value: 1
       - text:
           position: "65,90"
           size: "245,25"
-          font: "Regular;20"
+          font: "$FR_verysmall"
           flags: RT_HALIGN_LEFT|RT_WRAP
           value: 2
           color: 0xa0a0a0
@@ -43,7 +42,7 @@ convert:
       - text:
           position: "65,118"
           size: "245,25"
-          font: "Regular;20"
+          font: "$FR_verysmall"
           flags: RT_HALIGN_LEFT|RT_WRAP
           value: 3
           color: 0xa0a0a0
