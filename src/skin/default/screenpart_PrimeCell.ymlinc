@@ -1,33 +1,44 @@
+# Picon
 - widget:
     alphatest: "blend"
     name: "picon$index"
     position: "5,65"
     scaleFlags: "scaleCenter"
-    size: "80,48"
+    size: "80,50"
+
+# event poster
 - widget:
     alphatest: "blend"
     name: "programpix$index"
     position: "115,65"
     scaleFlags: "scaleCenter"
-    size: "200,133"
+    size: "200,135"
+
+# channel name
 - widget:
     font: "$FR_verysmall"
     foregroundColor: "yellow"
     name: "channel$index"
-    position: "5,123"
-    size: "110,46"
+    position: "5,115"
+    size: "110,55"
     transparent: "1"
+    valign: "center"
+
+# event start time    
 - widget:
     font: "$FR_verysmall"
     foregroundColor: "yellow"
     name: "time$index"
-    position: "5,176"
-    size: "95,28"
+    position: "5,170"
+    size: "110,30"
     transparent: "1"
+    valign: "bottom"
+
+# event description
 - widget:
     font: "$FR_verysmall"
     foregroundColor: "yellow"
     name: "description$index"
-    position: "5,211"
+    position: "5,210"
     size: "310,50"
     transparent: "1"

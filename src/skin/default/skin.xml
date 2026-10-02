@@ -20,48 +20,48 @@
 		<widget font="Bold;38" position="10,0" render="Label" size="1900,55" source="Title" transparent="1" valign="center" zPosition="1"/>
 		<eLabel backgroundColor="separator" position="0,54" size="1920,2"/>
 		<widget font="Regular;20" halign="right" name="day_selector" position="1490,15" size="420,26" transparent="1" valign="center" zPosition="2"/>
-		<widget alphatest="blend" name="picon0" position="5,65" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="blend" name="programpix0" position="115,65" scaleFlags="scaleCenter" size="200,133"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel0" position="5,123" size="110,46" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time0" position="5,176" size="95,28" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="description0" position="5,211" size="310,50" transparent="1"/>
-		<widget alphatest="blend" name="picon1" position="325,65" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="blend" name="programpix1" position="435,65" scaleFlags="scaleCenter" size="200,133"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel1" position="325,123" size="110,46" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time1" position="325,176" size="95,28" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="description1" position="325,211" size="310,50" transparent="1"/>
-		<widget alphatest="blend" name="picon2" position="645,65" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="blend" name="programpix2" position="755,65" scaleFlags="scaleCenter" size="200,133"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel2" position="645,123" size="110,46" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time2" position="645,176" size="95,28" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="description2" position="645,211" size="310,50" transparent="1"/>
-		<widget alphatest="blend" name="picon3" position="965,65" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="blend" name="programpix3" position="1075,65" scaleFlags="scaleCenter" size="200,133"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel3" position="965,123" size="110,46" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time3" position="965,176" size="95,28" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="description3" position="965,211" size="310,50" transparent="1"/>
-		<widget alphatest="blend" name="picon4" position="1285,65" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="blend" name="programpix4" position="1395,65" scaleFlags="scaleCenter" size="200,133"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel4" position="1285,123" size="110,46" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time4" position="1285,176" size="95,28" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="description4" position="1285,211" size="310,50" transparent="1"/>
-		<widget alphatest="blend" name="picon5" position="1605,65" scaleFlags="scaleCenter" size="80,48"/>
-		<widget alphatest="blend" name="programpix5" position="1715,65" scaleFlags="scaleCenter" size="200,133"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel5" position="1605,123" size="110,46" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time5" position="1605,176" size="95,28" transparent="1"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="description5" position="1605,211" size="310,50" transparent="1"/>
+		<widget alphatest="blend" name="picon0" position="5,65" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" name="programpix0" position="115,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="channel0" position="5,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="time0" position="5,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="description0" position="5,210" size="310,50" transparent="1"/>
+		<widget alphatest="blend" name="picon1" position="325,65" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" name="programpix1" position="435,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="channel1" position="325,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="time1" position="325,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="description1" position="325,210" size="310,50" transparent="1"/>
+		<widget alphatest="blend" name="picon2" position="645,65" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" name="programpix2" position="755,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="channel2" position="645,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="time2" position="645,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="description2" position="645,210" size="310,50" transparent="1"/>
+		<widget alphatest="blend" name="picon3" position="965,65" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" name="programpix3" position="1075,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="channel3" position="965,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="time3" position="965,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="description3" position="965,210" size="310,50" transparent="1"/>
+		<widget alphatest="blend" name="picon4" position="1285,65" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" name="programpix4" position="1395,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="channel4" position="1285,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="time4" position="1285,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="description4" position="1285,210" size="310,50" transparent="1"/>
+		<widget alphatest="blend" name="picon5" position="1605,65" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" name="programpix5" position="1715,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="channel5" position="1605,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="time5" position="1605,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Regular;20" foregroundColor="yellow" name="description5" position="1605,210" size="310,50" transparent="1"/>
 		<widget backgroundColorSelected="blue" enableWrapAround="1" position="0,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list0" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,65), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20"), parseFont("Bold;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -73,12 +73,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,65), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20"), parseFont("Bold;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -90,12 +90,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,65), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20"), parseFont("Bold;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -107,12 +107,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,65), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20"), parseFont("Bold;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -124,12 +124,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,65), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20"), parseFont("Bold;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
@@ -141,12 +141,12 @@
 				"template": [
 					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-					MultiContentEntryText(pos=(5,32), size=(55,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
-					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
+					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
+					MultiContentEntryText(pos=(65,5), size=(245,65), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
 					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
 					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
 				],
-				"fonts": [parseFont("Regular;26"), parseFont("Regular;20")],
+				"fonts": [parseFont("Regular;26"), parseFont("Regular;20"), parseFont("Bold;20")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}

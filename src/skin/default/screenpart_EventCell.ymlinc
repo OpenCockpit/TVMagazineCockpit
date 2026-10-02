@@ -12,6 +12,7 @@ convert:
     fonts:
       - "$FR_small"
       - "$FR_verysmall"
+      - "$FB_verysmall"
     fields:
       - text:
           position: "5,5"
@@ -22,12 +23,12 @@ convert:
       - text:
           position: "5,32"
           size: "55,20"
-          font: "$FR_verysmall"
+          font: "$FB_verysmall"
           flags: RT_HALIGN_LEFT|RT_VALIGN_CENTER
           value: 9
       - text:
           position: "65,5"
-          size: "245,75"
+          size: "245,65"
           font: "$FR_small"
           flags: RT_HALIGN_LEFT|RT_WRAP
           value: 1
