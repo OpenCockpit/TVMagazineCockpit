@@ -14,128 +14,137 @@ msgstr ""
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: ChannelUtils.py:44
 msgid "Unknown"
 msgstr "unbekannt"
 
+#: ConfigScreenInit.py:47
 msgid "COCKPIT"
 msgstr "COCKPIT"
 
+#: ConfigScreenInit.py:48
 msgid "Data source"
 msgstr "Datenquelle"
 
+#: ConfigScreenInit.py:48
 msgid "Select the data source for event information."
 msgstr "Auswahl der Datenquelle für Sendungsinformationen"
 
+#: ConfigScreenInit.py:49
 msgid "Picon directory"
 msgstr "Picon Verzeichnis"
 
+#: ConfigScreenInit.py:49
 msgid "Select the directory the picons are stored in."
 msgstr "Auswahl des Picon Verzeichnisses"
 
+#: ConfigScreenInit.py:50
 msgid "Temporary directory"
 msgstr "Temporäres Verzeichnis"
 
+#: ConfigScreenInit.py:50
 msgid "Select the temporary directory the pictures are stored in."
 msgstr "Auswahl des temporären Verzeichnisses"
 
+#: ConfigScreenInit.py:51
 msgid "Cache"
 msgstr "Cache"
 
+#: ConfigScreenInit.py:51
 msgid "Activate cache for events and pictures."
 msgstr "Zwischenspeicher für Sendungsinformationen und -bildern"
 
+#: ConfigScreenInit.py:52
 msgid "DEBUG"
 msgstr "DEBUG"
 
+#: ConfigScreenInit.py:53
 msgid "Log level"
 msgstr "Logstufe"
 
+#: ConfigScreenInit.py:53
 msgid "Select the debug log level."
 msgstr "Auswahl der Logstufe"
 
+#: EventDetails.py:67
 msgid "Back"
 msgstr "Zurück"
 
+#: EventDetails.py:69
 msgid "Trailer"
 msgstr "Trailer"
 
+#: EventDetails.py:87
 msgid "Event Details"
 msgstr "Sendungsdetails"
 
+#: EventDetails.py:102
 msgid "min"
 msgstr "Min"
 
+#: Menu.py:42
 msgid "Settings"
 msgstr "Einstellungen"
 
+#: Menu.py:43
 msgid "About"
 msgstr "Über"
 
+#: Menu.py:51
 msgid "Menu"
 msgstr "Menü"
 
+#: Menu.py:53 More.py:68
 msgid "Input"
 msgstr "Eingabe"
 
+#: More.py:53
 msgid "Zap"
 msgstr "Umschalten"
 
+#: More.py:54
 msgid "Add Timer"
 msgstr "Timer hinzufügen"
 
+#: More.py:66 TVMagazineCockpit.py:75
 msgid "More"
 msgstr "Mehr"
 
+#: Page.py:93 Page.py:97
 msgid "Overview"
 msgstr "Überblick"
 
+#: Page.py:93 Page.py:97
 msgid "Bouquet"
 msgstr "Bouquet"
 
+#: Page.py:93
 msgid "Loading..."
 msgstr "Lade..."
 
+#: Page.py:98
 msgid "Page"
 msgstr "Seite"
 
+#: Page.py:99
 msgid "Services"
 msgstr "Kanäle"
 
+#: TVMagazineCockpit.py:76
 msgid "20:15"
 msgstr "20:15"
 
+#: TVMagazineCockpit.py:77
 msgid "22:00"
 msgstr "22:00"
 
+#: TVMagazineCockpit.py:78
 msgid "Now"
 msgstr "Jetzt"
 
+#: plugin.py:66
 msgid "Browse TV Magazine"
 msgstr "TV Magazin duchblättern"
 
 msgid "No event data available"
 msgstr "Keine Sendungsinformationen verfügbar"
-
-msgid "Setup"
-msgstr ""
-
-msgid "Infobar/Play"
-msgstr "Infobar/Play"
-
-msgid "Play/Pause"
-msgstr "Play/Pause"
-
-msgid "Stop playback"
-msgstr "Stoppe Playback"
-
-msgid "Skip forward"
-msgstr "Springe vorwärts"
-
-msgid "Skip backward"
-msgstr "Springe zurück"
-
-msgid "EPG Info"
-msgstr "EPG Information"
-
-msgid "Do you want to resume playback at position: %d:%02d:%02d?"
-msgstr "Soll Playback an Position %d:%02d:%02d fortgesetzt werden?"

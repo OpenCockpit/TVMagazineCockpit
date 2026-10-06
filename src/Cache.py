@@ -4,6 +4,7 @@
 
 import os
 from time import time, strftime, localtime
+from twisted.internet import threads
 from Components.config import config
 from .ChannelUtils import readChannelDict, readChannelList
 from .TVMagazineData import TVMagazineData
@@ -40,7 +41,17 @@ class Cache:
             )
 
     def downloadEventsCallback(self, events):
+        # Called on the reactor (GUI) thread. Fetching the detail pages and
+        # pictures is blocking network I/O, so do it in a worker thread, else
+        # the GUI freezes (spinner) for the whole download.
         logger.debug("events: %s", events)
+        deferred = threads.deferToThread(self.downloadPictures, events)
+        deferred.addErrback(self.downloadPicturesError)
+
+    def downloadPicturesError(self, failure):
+        logger.error("download pictures failed: %s", failure.getErrorMessage())
+
+    def downloadPictures(self, events):
         start_time = timestamp_to_day_int(time()) + 20 * 3600 + 15 * 60
 
         events_of_the_day = events.get(self.date_str, {})
