@@ -72,7 +72,7 @@ class Navigation:
     def moveUp(self):
         """Navigate up within a column."""
         logger.info("list_index: %s", self.list_index)
-        if self.parent.list_indices[self.list_index] > 1:
+        if self.parent.list_indices[self.list_index] > 0:
             self.parent.list_indices[self.list_index] -= 1
             self.setTimestamp()
 

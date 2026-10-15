@@ -220,6 +220,7 @@ class TVMagazineCockpit(Screen, More, Picture):
     def openSetupScreenCallback(self, changed=False):
         logger.info("changed: %s", changed)
         if changed:
+            self.bouquet = getCurrentBouquetName(self.session)  # shown in the title bar
             prev_temp_dir = os.path.dirname(self.temp_dir)
             logger.debug("Previous temp directory: %s", prev_temp_dir)
             self.temp_dir = os.path.join(

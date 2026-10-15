@@ -6,7 +6,7 @@ from time import strftime, localtime
 from enigma import eTimer, gPixmapPtr
 from Components.config import config
 from .Debug import logger
-from .ServiceUtils import getPicon
+from .PiconUtils import getPicon
 from .ConfigInit import ROWS
 from .Index import idx
 from .EventUtils import find_time_event_index
@@ -54,7 +54,7 @@ class Column:
             event_list, self.parent.timestamp)
         self.parent.list_indices[i] = current_event_index
         start = max(0, current_event_index - 1)
-        stop = current_event_index - 1 + ROWS
+        stop = start + ROWS
 
         # Kick off async detail fetches (incl. the NEU flag, idx['is_new'])
         # for every event about to be shown - is_new stays None until
@@ -115,7 +115,7 @@ class Column:
 
         current_event_index = self.parent.list_indices[i]
         start = max(0, current_event_index - 1)
-        stop = current_event_index - 1 + ROWS
+        stop = start + ROWS
         if start <= j < stop:
             self.pending_refresh_columns.add(i)
             # A fixed window from the first pending event, not reset on each
@@ -147,7 +147,7 @@ class Column:
                 continue
             current_event_index = self.parent.list_indices[i]
             start = max(0, current_event_index - 1)
-            stop = current_event_index - 1 + ROWS
+            stop = start + ROWS
             self.updateEventList(service_ref, event_list, start, stop)
         self.pending_refresh_columns.clear()
 
@@ -186,8 +186,10 @@ class Column:
             # already enabled - enabling it only afterwards doesn't retroactively
             # repaint the row as selected.
             self.parent[f"list{i}"].setSelectionEnable(True)
-        self.parent[f"list{i}"].moveToIndex(
-            1)  # Position at the current event
+        # Position at the current event: the row after the one before it, or the first row
+        # when the current event is the first of the day (nothing is shown before it)
+        row = max(0, min(ROWS - 1, self.parent.list_indices[i] - start))
+        self.parent[f"list{i}"].moveToIndex(row)
 
     def showPrimeEvent(self, i, event, service_ref, channel):
         """Display prime time event information and thumbnail."""

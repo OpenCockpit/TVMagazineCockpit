@@ -14,7 +14,7 @@ from Components.config import config
 from enigma import eServiceReference
 # from StreamPlayer import StreamPlayer
 from .Debug import logger
-from .ServiceUtils import getPicon
+from .PiconUtils import getPicon
 from .__init__ import _
 from .Picture import Picture
 from .CockpitPlayer import CockpitPlayer
@@ -84,7 +84,8 @@ class EventDetails(Screen, Picture):
         self["title"].setText(title)
         self["subtitle"].setText(self.event[idx["subtitle"]] or "")
         start_time = strftime("%H:%M", localtime(self.event[idx["startTime"]]))
-        self["duration"].setText(f"{start_time}, {self.event[idx['duration']]} {_('min')}")
+        duration = int(round(float(self.event[idx["duration"]] or 0)))  # some sources deliver a fractional value
+        self["duration"].setText(f"{start_time}, {duration} {_('min')}")
         self["picon"].setPixmap(getPicon(self.service_ref))
         self["description"].setText(self.event[idx["description"]] or "")
 
