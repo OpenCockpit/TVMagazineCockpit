@@ -20,5 +20,8 @@ This repository has no control over the streams, links, or the legality of the c
 ## Limitations
 - Tested on OpenViX and OpenATV with DM900.
 
-## Links
-- Installation: https://OpenCockpit.github.io/TVMagazineCockpit
+## Installation
+- https://OpenCockpit.github.io/TVMagazineCockpit
+
+## Wiki
+- https://github.com/OpenCockpit/TVMagazineCockpit/wiki
