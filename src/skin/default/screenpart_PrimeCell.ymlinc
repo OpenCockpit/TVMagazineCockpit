@@ -36,9 +36,9 @@
 
 # event description
 - widget:
-    font: "$FR_verysmall"
+    font: "$FB_medium"
     foregroundColor: "yellow"
     name: "description$index"
     position: "5,210"
-    size: "310,50"
+    size: "310,55"
     transparent: "1"
