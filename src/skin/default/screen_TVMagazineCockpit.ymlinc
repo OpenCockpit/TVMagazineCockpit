@@ -6,7 +6,7 @@ screen:
     - xmlinc:
         file: "screenpart_TitleBar.ymlinc"
     - widget:
-        font: "$FR_verysmall"
+        font: "$caption_font"
         halign: "right"
         name: "day_selector"
         position: "1490,15"
@@ -41,6 +41,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        itemCornerRadiusSelected: "$radius_item"
         position: "eval(0*320),275"
         render: "Listbox"
         scrollbarMode: "showNever"
@@ -53,6 +54,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        itemCornerRadiusSelected: "$radius_item"
         position: "eval(1*320),275"
         render: "Listbox"
         scrollbarMode: "showNever"
@@ -65,6 +67,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        itemCornerRadiusSelected: "$radius_item"
         position: "eval(2*320),275"
         render: "Listbox"
         scrollbarMode: "showNever"
@@ -77,6 +80,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        itemCornerRadiusSelected: "$radius_item"
         position: "eval(3*320),275"
         render: "Listbox"
         scrollbarMode: "showNever"
@@ -89,6 +93,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        itemCornerRadiusSelected: "$radius_item"
         position: "eval(4*320),275"
         render: "Listbox"
         scrollbarMode: "showNever"
@@ -101,6 +106,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        itemCornerRadiusSelected: "$radius_item"
         position: "eval(5*320),275"
         render: "Listbox"
         scrollbarMode: "showNever"

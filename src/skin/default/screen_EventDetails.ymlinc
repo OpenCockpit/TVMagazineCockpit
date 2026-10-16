@@ -13,7 +13,7 @@ screen:
         scaleFlags: "scaleCenter"
         size: "100,100"
     - widget:
-        font: "$FR_big"
+        font: "$subtitle_font"
         name: "title"
         position: "150,70"
         size: "1100,43"
@@ -21,7 +21,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$FR_medium"
+        font: "$list_font"
         name: "subtitle"
         position: "150,125"
         size: "1100,37"
@@ -29,7 +29,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$FR_medium"
+        font: "$list_font"
         name: "duration"
         position: "150,170"
         size: "300,37"
@@ -37,13 +37,14 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$FR_medium"
+        font: "$list_font"
         name: "description"
         position: "20,230"
         size: "1230,560"
         transparent: "1"
     - widget:
         alphatest: "blend"
+        cornerRadius: "$radius_poster"
         name: "programpix"
         position: "1270,70"
         scaleFlags: "scaleCenter"

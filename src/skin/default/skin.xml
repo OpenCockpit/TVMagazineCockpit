@@ -1,187 +1,248 @@
 <?xml version="1.0" ?>
 <skin>
 	<colors>
-		<color name="backgroundDark" value="#101010"/>
-		<color name="backgroundMedium" value="#1a1a1a"/>
-		<color name="backgroundLight" value="#303030"/>
-		<color name="separator" value="#404040"/>
-		<color name="white" value="#ffffff"/>
-		<color name="black" value="#000000"/>
-		<color name="transparent" value="#ff000000"/>
-		<color name="gray" value="#aaaaaa"/>
-		<color name="green" value="#3c9f2a"/>
-		<color name="yellow" value="#e0c31e"/>
-		<color name="red" value="#e0331e"/>
-		<color name="cyan" value="#57ffff"/>
-		<color name="blue" value="#1e4ab5"/>
+		<color name="md_surface" value="#00121212"/>
+		<color name="md_surface_solid" value="#00121212"/>
+		<color name="md_surface_container_lowest" value="#000e0e0e"/>
+		<color name="md_surface_container_low" value="#001d1d1d"/>
+		<color name="md_surface_container" value="#00232323"/>
+		<color name="md_surface_container_high" value="#002c2c2c"/>
+		<color name="md_surface_container_highest" value="#00363636"/>
+		<color name="md_scrim" value="#7f000000"/>
+		<color name="md_surface_overlay_soft" value="#18121212"/>
+		<color name="md_surface_overlay" value="#2d121212"/>
+		<color name="md_surface_overlay_strong" value="#fa121212"/>
+		<color name="md_outline" value="#00919191"/>
+		<color name="md_outline_variant" value="#00424242"/>
+		<color name="md_on_surface" value="#00e3e3e3"/>
+		<color name="md_on_surface_variant" value="#00c4c4c4"/>
+		<color name="md_primary" value="#00a8c7fa"/>
+		<color name="md_primary_container" value="#000842a0"/>
+		<color name="md_primary_container_translucent" value="#250842a0"/>
+		<color name="md_primary_container_soft" value="#080842a0"/>
+		<color name="md_on_primary_container" value="#00d3e3fd"/>
+		<color name="md_secondary" value="#00bdc7dc"/>
+		<color name="md_secondary_container" value="#003f4759"/>
+		<color name="md_on_secondary_container" value="#00d9e3f8"/>
+		<color name="md_tertiary" value="#007fd6c8"/>
+		<color name="md_success" value="#0081c995"/>
+		<color name="md_success_container" value="#000f5223"/>
+		<color name="md_warning" value="#00ffb74d"/>
+		<color name="md_warning_container" value="#006b3f00"/>
+		<color name="md_error" value="#00f28b82"/>
+		<color name="md_error_container" value="#008c1d18"/>
+		<color name="md_key_red" value="#00f28b82"/>
+		<color name="md_key_green" value="#0081c995"/>
+		<color name="md_key_yellow" value="#00fdd663"/>
+		<color name="md_key_blue" value="#008ab4f8"/>
+		<color name="md_shadow" value="#00000000"/>
+		<color name="md_transparent" value="#ff000000"/>
 	</colors>
 	<fonts>
-		<font filename="/usr/share/enigma2/FontCockpit/fonts/DejaVuSans.ttf" name="Regular" scale="89"/>
+		<font filename="fonts/DejaVuSans.ttf" name="Regular" scale="89"/>
 		<font filename="Roboto-Bold.ttf" name="Bold" scale="71"/>
+		<font filename="fonts/BNR.otf" name="ExtraF_3" scale="100"/>
+		<font filename="fonts/Bignoodletitling.ttf" name="CAID" scale="100"/>
+		<font filename="lcd.ttf" name="LCD" scale="100"/>
+		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
+		<font filename="andale.ttf" name="Fixed" scale="100"/>
+		<font filename="DejaVuSans.ttf" name="DejaVuSans" scale="100"/>
+		<alias font="Regular" height="38" name="ChoiceList" size="28"/>
+		<alias font="Regular" height="38" name="TextNormal" size="28"/>
+		<alias font="Regular" height="25" name="ChoiceBoxDescription" size="22"/>
+		<alias font="Regular" height="38" name="FileList" size="28"/>
+		<alias font="Regular" height="38" name="FileListMulti" size="28"/>
+		<alias font="Regular" height="76" name="PluginBrowser0" size="32"/>
+		<alias font="Regular" name="PluginBrowser1" size="22"/>
+		<alias font="Regular" height="45" name="ServiceInfo" size="30"/>
+		<alias font="Regular" height="45" name="SelectionList" size="30"/>
+		<alias font="Regular" height="30" name="ImsSelectionList" size="28"/>
+		<alias font="Regular" height="38" name="PartnerBoxEntryList0" size="28"/>
+		<alias font="Regular" name="PartnerBoxEntryList1" size="28"/>
+		<alias font="Regular" height="114" name="PartnerBoxE2TimerMenu0" size="32"/>
+		<alias font="Regular" name="PartnerBoxE2TimerMenu1" size="28"/>
+		<alias font="Regular" height="45" name="PartnerBoxBouquetList0" size="32"/>
+		<alias font="Regular" name="PartnerBoxBouquetList1" size="28"/>
+		<alias font="Regular" height="114" name="PartnerBoxChannelList0" size="32"/>
+		<alias font="Regular" name="PartnerBoxChannelList1" size="28"/>
+		<alias font="Regular" height="38" name="PartnerBoxChannelEPGList0" size="32"/>
+		<alias font="Regular" name="PartnerBoxChannelEPGList1" size="24"/>
+		<alias font="DejaVuSans" height="68" name="VirtualKeyBoard" size="42"/>
+		<alias font="Regular" height="45" name="HelpMenuList" size="30"/>
+		<alias font="Regular" height="75" name="HelpMenuListExt0" size="32"/>
+		<alias font="Regular" name="HelpMenuListExt1" size="28"/>
+		<alias font="Regular" height="45" name="Dreamexplorer" size="30"/>
+		<alias font="Regular" height="38" name="PlayList" size="28"/>
+		<alias font="Regular" height="25" name="AutotimerList" size="22"/>
+		<alias font="Regular" name="AutotimerListExt0" size="28"/>
+		<alias font="Regular" height="95" name="AutotimerListExt1" size="22"/>
+		<alias font="Fixed" height="45" name="FcZipArchiver" size="26"/>
+		<alias font="Regular" name="AutomaticVolumeAdjustment0" size="28"/>
+		<alias font="Regular" name="AutomaticVolumeAdjustment1" size="28"/>
 	</fonts>
-	<screen backgroundColor="backgroundMedium" flags="wfNoBorder" name="TVMagazineCockpit" position="center,center" resolution="1920,1080" size="1920,1080">
-		<eLabel backgroundColor="backgroundDark" position="0,0" size="1920,55"/>
-		<widget font="Bold;38" position="10,0" render="Label" size="1900,55" source="Title" transparent="1" valign="center" zPosition="1"/>
-		<eLabel backgroundColor="separator" position="0,54" size="1920,2"/>
+	<screen backgroundColor="md_surface" flags="wfNoBorder" name="TVMagazineCockpit" position="center,center" resolution="1920,1080" size="1920,1080">
+		<eLabel backgroundColor="md_surface_container_lowest" position="0,0" size="1920,55"/>
+		<widget font="Bold;36" position="10,0" render="Label" size="1900,55" source="Title" transparent="1" valign="center" zPosition="1"/>
+		<eLabel backgroundColor="md_outline_variant" position="0,54" size="1920,2"/>
 		<widget font="Regular;20" halign="right" name="day_selector" position="1490,15" size="420,26" transparent="1" valign="center" zPosition="2"/>
 		<widget alphatest="blend" name="picon0" position="5,65" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" name="programpix0" position="115,65" scaleFlags="scaleCenter" size="200,135"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel0" position="5,115" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time0" position="5,170" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;32" foregroundColor="yellow" name="description0" position="5,210" size="310,55" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="12" name="programpix0" position="115,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel0" position="5,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time0" position="5,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description0" position="5,210" size="310,55" transparent="1"/>
 		<widget alphatest="blend" name="picon1" position="325,65" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" name="programpix1" position="435,65" scaleFlags="scaleCenter" size="200,135"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel1" position="325,115" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time1" position="325,170" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;32" foregroundColor="yellow" name="description1" position="325,210" size="310,55" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="12" name="programpix1" position="435,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel1" position="325,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time1" position="325,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description1" position="325,210" size="310,55" transparent="1"/>
 		<widget alphatest="blend" name="picon2" position="645,65" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" name="programpix2" position="755,65" scaleFlags="scaleCenter" size="200,135"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel2" position="645,115" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time2" position="645,170" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;32" foregroundColor="yellow" name="description2" position="645,210" size="310,55" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="12" name="programpix2" position="755,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel2" position="645,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time2" position="645,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description2" position="645,210" size="310,55" transparent="1"/>
 		<widget alphatest="blend" name="picon3" position="965,65" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" name="programpix3" position="1075,65" scaleFlags="scaleCenter" size="200,135"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel3" position="965,115" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time3" position="965,170" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;32" foregroundColor="yellow" name="description3" position="965,210" size="310,55" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="12" name="programpix3" position="1075,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel3" position="965,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time3" position="965,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description3" position="965,210" size="310,55" transparent="1"/>
 		<widget alphatest="blend" name="picon4" position="1285,65" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" name="programpix4" position="1395,65" scaleFlags="scaleCenter" size="200,135"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel4" position="1285,115" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time4" position="1285,170" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;32" foregroundColor="yellow" name="description4" position="1285,210" size="310,55" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="12" name="programpix4" position="1395,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel4" position="1285,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time4" position="1285,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description4" position="1285,210" size="310,55" transparent="1"/>
 		<widget alphatest="blend" name="picon5" position="1605,65" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" name="programpix5" position="1715,65" scaleFlags="scaleCenter" size="200,135"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="channel5" position="1605,115" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="yellow" name="time5" position="1605,170" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;32" foregroundColor="yellow" name="description5" position="1605,210" size="310,55" transparent="1"/>
-		<widget backgroundColorSelected="blue" enableWrapAround="1" position="0,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list0" transparent="1">
-			<convert type="TemplatedMultiContent">
+		<widget alphatest="blend" cornerRadius="12" name="programpix5" position="1715,65" scaleFlags="scaleCenter" size="200,135"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel5" position="1605,115" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time5" position="1605,170" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description5" position="1605,210" size="310,55" transparent="1"/>
+		<widget backgroundColorSelected="md_primary_container" enableWrapAround="1" itemCornerRadiusSelected="8" position="0,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list0" transparent="1">
+			<convert type="TemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
-				"fonts": [parseFont("Bold;32"), parseFont("Regular;20"), parseFont("Bold;20")],
+				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;26")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="blue" enableWrapAround="1" position="320,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list1" transparent="1">
-			<convert type="TemplatedMultiContent">
+		<widget backgroundColorSelected="md_primary_container" enableWrapAround="1" itemCornerRadiusSelected="8" position="320,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list1" transparent="1">
+			<convert type="TemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
-				"fonts": [parseFont("Bold;32"), parseFont("Regular;20"), parseFont("Bold;20")],
+				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;26")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="blue" enableWrapAround="1" position="640,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list2" transparent="1">
-			<convert type="TemplatedMultiContent">
+		<widget backgroundColorSelected="md_primary_container" enableWrapAround="1" itemCornerRadiusSelected="8" position="640,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list2" transparent="1">
+			<convert type="TemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
-				"fonts": [parseFont("Bold;32"), parseFont("Regular;20"), parseFont("Bold;20")],
+				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;26")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="blue" enableWrapAround="1" position="960,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list3" transparent="1">
-			<convert type="TemplatedMultiContent">
+		<widget backgroundColorSelected="md_primary_container" enableWrapAround="1" itemCornerRadiusSelected="8" position="960,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list3" transparent="1">
+			<convert type="TemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
-				"fonts": [parseFont("Bold;32"), parseFont("Regular;20"), parseFont("Bold;20")],
+				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;26")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="blue" enableWrapAround="1" position="1280,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list4" transparent="1">
-			<convert type="TemplatedMultiContent">
+		<widget backgroundColorSelected="md_primary_container" enableWrapAround="1" itemCornerRadiusSelected="8" position="1280,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list4" transparent="1">
+			<convert type="TemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
-				"fonts": [parseFont("Bold;32"), parseFont("Regular;20"), parseFont("Bold;20")],
+				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;26")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="blue" enableWrapAround="1" position="1600,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list5" transparent="1">
-			<convert type="TemplatedMultiContent">
+		<widget backgroundColorSelected="md_primary_container" enableWrapAround="1" itemCornerRadiusSelected="8" position="1600,275" render="Listbox" scrollbarMode="showNever" size="320,750" source="list5" transparent="1">
+			<convert type="TemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color=0x595959),
+					MultiContentEntryText(pos=(0,0), size=(320,150), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color=0xa0a0a0, color_sel=0xa0a0a0),
-					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color=0xa0a0a0, color_sel=0xa0a0a0),
+					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,118), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
-				"fonts": [parseFont("Bold;32"), parseFont("Regular;20"), parseFont("Bold;20")],
+				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;26")],
 				"itemHeight": 150,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<eLabel backgroundColor="separator" position="0,1024" size="1920,2"/>
-		<eLabel backgroundColor="backgroundDark" position="0,1025" size="1920,55"/>
-		<widget conditional="key_red" font="Bold;38" foregroundColor="red" halign="center" name="key_red" noWrap="1" position="0,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_green" font="Bold;38" foregroundColor="green" halign="center" name="key_green" noWrap="1" position="435,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_yellow" font="Bold;38" foregroundColor="yellow" halign="center" name="key_yellow" noWrap="1" position="870,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_blue" font="Bold;38" foregroundColor="blue" halign="center" name="key_blue" noWrap="1" position="1305,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_menu" font="Bold;38" foregroundColor="white" halign="center" name="key_menu" noWrap="1" position="1740,1025" size="90,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_info" font="Bold;38" foregroundColor="white" halign="center" name="key_info" noWrap="1" position="1830,1025" size="90,55" transparent="1" valign="center" zPosition="2"/>
+		<eLabel backgroundColor="md_outline_variant" position="0,1024" size="1920,2"/>
+		<eLabel backgroundColor="md_surface_container_lowest" position="0,1025" size="1920,55"/>
+		<widget conditional="key_red" font="Bold;36" foregroundColor="md_key_red" halign="center" name="key_red" noWrap="1" position="0,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_green" font="Bold;36" foregroundColor="md_key_green" halign="center" name="key_green" noWrap="1" position="435,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_yellow" font="Bold;36" foregroundColor="md_key_yellow" halign="center" name="key_yellow" noWrap="1" position="870,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_blue" font="Bold;36" foregroundColor="md_key_blue" halign="center" name="key_blue" noWrap="1" position="1305,1025" size="435,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_menu" font="Bold;36" foregroundColor="md_on_surface" halign="center" name="key_menu" noWrap="1" position="1740,1025" size="90,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_info" font="Bold;36" foregroundColor="md_on_surface" halign="center" name="key_info" noWrap="1" position="1830,1025" size="90,55" transparent="1" valign="center" zPosition="2"/>
 	</screen>
-	<screen backgroundColor="backgroundMedium" flags="wfNoBorder" name="EventDetails" position="center,center" resolution="1920,1080" size="1800,930">
-		<eLabel backgroundColor="backgroundDark" position="0,0" size="1800,55"/>
-		<widget font="Bold;38" position="10,0" render="Label" size="1780,55" source="Title" transparent="1" valign="center" zPosition="1"/>
-		<eLabel backgroundColor="separator" position="0,54" size="1800,2"/>
+	<screen backgroundColor="md_surface" flags="wfNoBorder" name="EventDetails" position="center,center" resolution="1920,1080" size="1800,930">
+		<eLabel backgroundColor="md_surface_container_lowest" position="0,0" size="1800,55"/>
+		<widget font="Bold;36" position="10,0" render="Label" size="1780,55" source="Title" transparent="1" valign="center" zPosition="1"/>
+		<eLabel backgroundColor="md_outline_variant" position="0,54" size="1800,2"/>
 		<widget alphatest="on" name="picon" position="20,70" scale="1" scaleFlags="scaleCenter" size="100,100"/>
-		<widget font="Regular;38" name="title" position="150,70" size="1100,43" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;32" name="subtitle" position="150,125" size="1100,37" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;32" name="duration" position="150,170" size="300,37" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;32" name="description" position="20,230" size="1230,560" transparent="1"/>
-		<widget alphatest="blend" name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
-		<eLabel backgroundColor="separator" position="0,874" size="1800,2"/>
-		<eLabel backgroundColor="backgroundDark" position="0,875" size="1800,55"/>
-		<widget conditional="key_red" font="Bold;38" foregroundColor="red" halign="center" name="key_red" noWrap="1" position="0,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_green" font="Bold;38" foregroundColor="green" halign="center" name="key_green" noWrap="1" position="405,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_yellow" font="Bold;38" foregroundColor="yellow" halign="center" name="key_yellow" noWrap="1" position="810,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_blue" font="Bold;38" foregroundColor="blue" halign="center" name="key_blue" noWrap="1" position="1215,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_menu" font="Bold;38" foregroundColor="white" halign="center" name="key_menu" noWrap="1" position="1620,875" size="90,55" transparent="1" valign="center" zPosition="2"/>
-		<widget conditional="key_info" font="Bold;38" foregroundColor="white" halign="center" name="key_info" noWrap="1" position="1710,875" size="90,55" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;36" name="title" position="150,70" size="1100,43" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;30" name="subtitle" position="150,125" size="1100,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;30" name="duration" position="150,170" size="300,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;30" name="description" position="20,230" size="1230,560" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="12" name="programpix" position="1270,70" scaleFlags="scaleCenter" size="500,375"/>
+		<eLabel backgroundColor="md_outline_variant" position="0,874" size="1800,2"/>
+		<eLabel backgroundColor="md_surface_container_lowest" position="0,875" size="1800,55"/>
+		<widget conditional="key_red" font="Bold;36" foregroundColor="md_key_red" halign="center" name="key_red" noWrap="1" position="0,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_green" font="Bold;36" foregroundColor="md_key_green" halign="center" name="key_green" noWrap="1" position="405,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_yellow" font="Bold;36" foregroundColor="md_key_yellow" halign="center" name="key_yellow" noWrap="1" position="810,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_blue" font="Bold;36" foregroundColor="md_key_blue" halign="center" name="key_blue" noWrap="1" position="1215,875" size="405,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_menu" font="Bold;36" foregroundColor="md_on_surface" halign="center" name="key_menu" noWrap="1" position="1620,875" size="90,55" transparent="1" valign="center" zPosition="2"/>
+		<widget conditional="key_info" font="Bold;36" foregroundColor="md_on_surface" halign="center" name="key_info" noWrap="1" position="1710,875" size="90,55" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 </skin>
