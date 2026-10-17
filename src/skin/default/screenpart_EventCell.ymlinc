@@ -1,5 +1,5 @@
 convert:
-  type: "TemplatedMultiContentEx"
+  type: "COCTemplatedMultiContentEx"
   cell:
     itemHeight: 150
     width: 320
@@ -12,7 +12,7 @@ convert:
     fonts:
       - "$md_title_medium_emphasized"
       - "$md_label_medium"
-      - "$md_label_large_emphasized"
+      - "$md_title_small_emphasized"
     fields:
       - text:
           position: "5,5"
@@ -23,7 +23,7 @@ convert:
       - text:
           position: "5,32"
           size: "55,20"
-          font: "$md_label_large_emphasized"
+          font: "$md_title_small_emphasized"
           flags: RT_HALIGN_LEFT|RT_VALIGN_CENTER
           value: 9
       - text:
