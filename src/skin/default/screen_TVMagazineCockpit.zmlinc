@@ -6,7 +6,7 @@ screen:
     - xmlinc:
         file: "screenpart_TitleBar.ymlinc"
     - widget:
-        font: "$caption_font"
+        font: "$md_label_medium"
         halign: "right"
         name: "day_selector"
         position: "1490,15"
@@ -29,6 +29,7 @@ screen:
           - widget:
               backgroundColorSelected: "$backgroundColorSelected"
               enableWrapAround: "1"
+              foregroundColorSelected: "$foregroundColorSelected"
               itemCornerRadiusSelected: "$radius_item"
               position: "eval($i*320),275"
               render: "Listbox"

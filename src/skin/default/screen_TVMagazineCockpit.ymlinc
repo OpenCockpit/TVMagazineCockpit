@@ -6,7 +6,7 @@ screen:
     - xmlinc:
         file: "screenpart_TitleBar.ymlinc"
     - widget:
-        font: "$caption_font"
+        font: "$md_label_medium"
         halign: "right"
         name: "day_selector"
         position: "1490,15"
@@ -41,6 +41,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        foregroundColorSelected: "$foregroundColorSelected"
         itemCornerRadiusSelected: "$radius_item"
         position: "eval(0*320),275"
         render: "Listbox"
@@ -54,6 +55,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        foregroundColorSelected: "$foregroundColorSelected"
         itemCornerRadiusSelected: "$radius_item"
         position: "eval(1*320),275"
         render: "Listbox"
@@ -67,6 +69,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        foregroundColorSelected: "$foregroundColorSelected"
         itemCornerRadiusSelected: "$radius_item"
         position: "eval(2*320),275"
         render: "Listbox"
@@ -80,6 +83,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        foregroundColorSelected: "$foregroundColorSelected"
         itemCornerRadiusSelected: "$radius_item"
         position: "eval(3*320),275"
         render: "Listbox"
@@ -93,6 +97,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        foregroundColorSelected: "$foregroundColorSelected"
         itemCornerRadiusSelected: "$radius_item"
         position: "eval(4*320),275"
         render: "Listbox"
@@ -106,6 +111,7 @@ screen:
     - widget:
         backgroundColorSelected: "$backgroundColorSelected"
         enableWrapAround: "1"
+        foregroundColorSelected: "$foregroundColorSelected"
         itemCornerRadiusSelected: "$radius_item"
         position: "eval(5*320),275"
         render: "Listbox"

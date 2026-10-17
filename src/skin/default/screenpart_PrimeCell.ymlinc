@@ -17,7 +17,7 @@
 
 # channel name
 - widget:
-    font: "$caption_font"
+    font: "$md_label_medium"
     foregroundColor: "md_key_yellow"
     name: "channel$index"
     position: "5,115"
@@ -27,7 +27,7 @@
 
 # event start time    
 - widget:
-    font: "$caption_font"
+    font: "$md_label_medium"
     foregroundColor: "md_key_yellow"
     name: "time$index"
     position: "5,170"
@@ -37,7 +37,7 @@
 
 # event description
 - widget:
-    font: "$event_font"
+    font: "$md_title_medium_emphasized"
     foregroundColor: "md_key_yellow"
     name: "description$index"
     position: "5,210"

@@ -13,7 +13,7 @@ screen:
         scaleFlags: "scaleCenter"
         size: "100,100"
     - widget:
-        font: "$subtitle_font"
+        font: "$md_headline_small"
         name: "title"
         position: "150,70"
         size: "1100,43"
@@ -21,7 +21,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$list_font"
+        font: "$md_body_large"
         name: "subtitle"
         position: "150,125"
         size: "1100,37"
@@ -29,7 +29,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$list_font"
+        font: "$md_body_large"
         name: "duration"
         position: "150,170"
         size: "300,37"
@@ -37,7 +37,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$list_font"
+        font: "$md_body_large"
         name: "description"
         position: "20,230"
         size: "1230,560"
