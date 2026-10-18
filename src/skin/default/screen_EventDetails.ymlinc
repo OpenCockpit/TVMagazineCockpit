@@ -1,7 +1,7 @@
 screen:
   name: "EventDetails"
   position: "center,center"
-  size: "1800,930"
+  size: "1416,858"
   children:
     - xmlinc:
         file: "screenpart_TitleBar.ymlinc"
@@ -16,7 +16,7 @@ screen:
         font: "$md_title_large"
         name: "title"
         position: "150,70"
-        size: "1100,43"
+        size: "826,43"
         transparent: "1"
         valign: "center"
         zPosition: "1"
@@ -24,7 +24,7 @@ screen:
         font: "$md_body_large"
         name: "subtitle"
         position: "150,125"
-        size: "1100,37"
+        size: "826,37"
         transparent: "1"
         valign: "center"
         zPosition: "1"
@@ -40,14 +40,14 @@ screen:
         font: "$md_body_large"
         name: "description"
         position: "20,230"
-        size: "1230,560"
+        size: "956,555"
         transparent: "1"
     - widget:
         alphatest: "blend"
         cornerRadius: "$radius_poster"
         name: "programpix"
-        position: "1270,70"
+        position: "996,70"
         scaleFlags: "scaleCenter"
-        size: "500,375"
+        size: "400,300"
     - xmlinc:
         file: "screenpart_Footer.ymlinc"
