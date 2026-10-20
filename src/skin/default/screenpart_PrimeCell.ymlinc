@@ -13,7 +13,7 @@
     name: "programpix$index"
     position: "115,65"
     scaleFlags: "scaleCenter"
-    size: "200,135"
+    size: "196,132"
 
 # channel name
 - widget:
@@ -41,5 +41,5 @@
     foregroundColor: "md_key_yellow"
     name: "description$index"
     position: "5,210"
-    size: "310,55"
+    size: "306,55"
     transparent: "1"

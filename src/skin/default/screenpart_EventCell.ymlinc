@@ -1,8 +1,8 @@
 convert:
   type: "COCTemplatedMultiContentEx"
   cell:
-    itemHeight: 150
-    width: 320
+    itemHeight: 141
+    width: 316
     selectionEnabled: false
     border:
       width: 1
@@ -41,7 +41,7 @@ convert:
           color: "md_on_surface_variant"
           color_sel: "md_on_surface_variant"
       - text:
-          position: "65,118"
+          position: "65,114"
           size: "245,25"
           font: "$md_label_medium"
           flags: RT_HALIGN_LEFT|RT_WRAP

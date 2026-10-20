@@ -28,8 +28,8 @@ logger.info("...")
 if not hasattr(config.plugins, "tvmagazinecockpit"):
     config.plugins.tvmagazinecockpit = ConfigSubsection()
 config.plugins.tvmagazinecockpit.fake_entry = NoSave(ConfigNothing())
-config.plugins.tvmagazinecockpit.temp_dir = ConfigSelection(
-    default="/data/TVC", choices=[("/data/TVC", "/data/TVC")])
+config.plugins.tvmagazinecockpit.temp_dir = ConfigDirectory(
+    default="/media/hdd/TVC")
 config.plugins.tvmagazinecockpit.data_source = ConfigSelection(
     default="tvfa", choices=data_source_choices)
 config.plugins.tvmagazinecockpit.piconspath = ConfigDirectory(
