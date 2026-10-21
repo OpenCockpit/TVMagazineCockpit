@@ -116,6 +116,12 @@ msgstr ""
 msgid "No event data available"
 msgstr ""
 
+msgid "NEU"
+msgstr ""
+
+msgid "Auto (bouquet of currently playing service)"
+msgstr ""
+
 msgid "Setup"
 msgstr ""
 

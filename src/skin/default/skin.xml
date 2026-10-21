@@ -84,7 +84,7 @@
 		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel5" position="1597,136" size="110,55" transparent="1" valign="center"/>
 		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time5" position="1597,191" size="110,30" transparent="1" valign="bottom"/>
 		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description5" position="1597,231" size="306,55" transparent="1"/>
-		<widget backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="12,292" render="Listbox" scrollbarMode="showNever" size="316,705" source="list0" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="12,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" selectionFrame="none" size="316,705" source="list0" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
@@ -101,7 +101,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="328,292" render="Listbox" scrollbarMode="showNever" size="316,705" source="list1" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="328,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" selectionFrame="none" size="316,705" source="list1" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
@@ -118,7 +118,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="644,292" render="Listbox" scrollbarMode="showNever" size="316,705" source="list2" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="644,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" selectionFrame="none" size="316,705" source="list2" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
@@ -135,7 +135,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="960,292" render="Listbox" scrollbarMode="showNever" size="316,705" source="list3" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="960,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" selectionFrame="none" size="316,705" source="list3" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
@@ -152,7 +152,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1276,292" render="Listbox" scrollbarMode="showNever" size="316,705" source="list4" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1276,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" selectionFrame="none" size="316,705" source="list4" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
@@ -169,7 +169,7 @@
 			}
 			</convert>
 		</widget>
-		<widget backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1592,292" render="Listbox" scrollbarMode="showNever" size="316,705" source="list5" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1592,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" selectionFrame="none" size="316,705" source="list5" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [

@@ -116,8 +116,14 @@ msgstr "TV Magazin duchblättern"
 msgid "No event data available"
 msgstr "Keine Sendungsinformationen verfügbar"
 
+msgid "NEU"
+msgstr "NEU"
+
+msgid "Auto (bouquet of currently playing service)"
+msgstr "Auto (Bouquet des aktuellen Senders)"
+
 msgid "Setup"
-msgstr "Einstellungen"
+msgstr "Konfiguration"
 
 msgid "Select the bouquet whose channels are shown, or Auto to use the bouquet of the currently playing service."
 msgstr "Wähle das aktuelle Bouquet oder Auto für das Bouquet des gerade eingestellten Kanals."
