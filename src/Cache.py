@@ -10,6 +10,8 @@ from .ChannelUtils import readChannelDict, readChannelList
 from .TVMagazineData import TVMagazineData
 from .FileUtils import createDirectory, deleteDirectory
 from .WebRequests import WebRequests
+from .Picture import shrinkPicture
+from .CacheUtils import saveEvents
 from .Index import idx
 from .DateTimeUtils import timestamp_to_day_int
 from .EventUtils import find_time_event_index
@@ -64,11 +66,19 @@ class Cache:
                 event = event_list[i]
                 event = self.tvmagazine_data.getDetailedEvent(event)
                 if event:
+                    # Kept with the cached events (saved below): the detailed event has the poster's address and the NEU flag,
+                    # which the screen otherwise fetches from the internet again every time it opens, and the posters only
+                    # show once these requests are answered.
+                    event_list[i] = event
                     url = event[idx["photo_url"]]
                     ident = f"{event[idx['startTime']]}-{channel_id}"
                     path = os.path.join(
                         self.temp_dir, "programpix-" + ident + ".jpg")
-                    WebRequests().downloadFile(url, path)
+                    # as showPicture does: no picture, or one that is already here (two channels can show the same event)
+                    if url and not url.endswith("None") and not os.path.isfile(path):
+                        WebRequests().downloadFile(url, path)
+                        shrinkPicture(path)
+        saveEvents(events)
 
     def cleanup(self):
         logger.info("Cleaning up old cache directories...")

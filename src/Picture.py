@@ -51,6 +51,37 @@ def getImageSize(path):
         return None
 
 
+MAX_PICTURE_WIDTH = 1280  # wider pictures are reduced to this when they are downloaded
+
+
+def shrinkPicture(path, max_width=MAX_PICTURE_WIDTH):
+    """Reduce a downloaded picture in place to at most max_width pixels wide. The originals of some channels are 5000x3300
+    pixels (4 MB), which the box needs a second or more to decode: the posters of the columns then appear one by one, as if
+    they were fetched from the internet. Left alone when it is small enough or PIL is not installed."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return
+    temp_path = path + ".tmp"
+    try:
+        with Image.open(path) as img:
+            if img.width <= max_width:
+                return
+            height = max(1, round(img.height * max_width / img.width))
+            img.draft("RGB", (max_width, height))  # the JPEG decoder scales by 1/2, 1/4 or 1/8 while it decodes: fast, little memory
+            resample = Image.Resampling.LANCZOS if hasattr(Image, "Resampling") else Image.LANCZOS
+            small = img.convert("RGB").resize((max_width, height), resample)
+            small.save(temp_path, "JPEG", quality=85)
+        os.replace(temp_path, path)
+        logger.debug("shrunk to %sx%s: %s", max_width, height, path)
+    except Exception as e:
+        logger.error("path: %s, exception: %s", path, e)
+        try:
+            os.remove(temp_path)
+        except OSError:
+            pass
+
+
 class Picture(WebRequests):
     def __init__(self, temp_dir):
         WebRequests.__init__(self)
@@ -72,6 +103,7 @@ class Picture(WebRequests):
     def downloadPicture(self, pixmap, url, path, callback):
         logger.info("path: %s", path)
         self.downloadFile(url, path)
+        shrinkPicture(path)
         logger.debug("downloaded: %s", path)
         reactor.callFromThread(callback, pixmap, path)
 

@@ -42,12 +42,14 @@ class TVSData(WebRequests):
             for page in (1, 2):
                 url = f'https://www.tvspielfilm.de/tv-programm/sendungen/?channel={channel_id}&date={day}&page={page}'
                 logger.debug("tvs url channel: %s", url)
-                result = self.getContent(url)
+                # the second page exists only for a channel with more events than the first holds: no page 2 is no error
+                result = self.getContent(url, not_found_ok=page > 1)
                 # logger.info("result: %s", result)
-                if result:
-                    events = tvs_parse(result)
-                    logger.debug("events: %s", events)
-                    all_events[day][service_ref] += events
+                if not result:
+                    break  # nothing here, so nothing on the next page either
+                events = tvs_parse(result)
+                logger.debug("events: %s", events)
+                all_events[day][service_ref] += events
         # logger.debug("all_events: %s", all_events)
         saveEvents(all_events)
         logger.debug("callback: %s", callback)
