@@ -1,8 +1,8 @@
 convert:
   type: "COCTemplatedMultiContentEx"
   cell:
-    itemHeight: 141
-    width: 316
+    itemHeight: 140
+    width: "eval($width/6)"
     selectionEnabled: false
     border:
       width: 1
@@ -14,32 +14,37 @@ convert:
       - "$md_label_medium"
       - "$md_title_small_emphasized"
     fields:
+      # Start time
       - text:
           position: "5,5"
           size: "55,25"
           font: "$md_label_medium"
           flags: RT_HALIGN_LEFT|RT_VALIGN_CENTER
           value: 0
+      # New
       - text:
           position: "5,32"
           size: "55,20"
           font: "$md_title_small_emphasized"
           flags: RT_HALIGN_LEFT|RT_VALIGN_CENTER
           value: 9
+      # Title
       - text:
           position: "65,5"
           size: "245,75"
           font: "$md_title_medium_emphasized"
           flags: RT_HALIGN_LEFT|RT_WRAP
           value: 1
+      # Description
       - text:
           position: "65,90"
-          size: "245,25"
+          size: "$width/6-65-5,25"
           font: "$md_label_medium"
           flags: RT_HALIGN_LEFT
           value: 2
           color: "md_on_surface_variant"
           color_sel: "md_on_surface_variant"
+      # Country & Year
       - text:
           position: "65,114"
           size: "245,25"

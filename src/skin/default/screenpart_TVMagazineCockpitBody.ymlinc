@@ -1,0 +1,108 @@
+- xmlinc:
+    file: "screenpart_PrimeCell.ymlinc"
+    index: "0"
+    position: "eval(0*$width/6),0"
+- xmlinc:
+    file: "screenpart_PrimeCell.ymlinc"
+    index: "1"
+    position: "eval(1*$width/6),0"
+- xmlinc:
+    file: "screenpart_PrimeCell.ymlinc"
+    index: "2"
+    position: "eval(2*$width/6),0"
+- xmlinc:
+    file: "screenpart_PrimeCell.ymlinc"
+    index: "3"
+    position: "eval(3*$width/6),0"
+- xmlinc:
+    file: "screenpart_PrimeCell.ymlinc"
+    index: "4"
+    position: "eval(4*$width/6),0"
+- xmlinc:
+    file: "screenpart_PrimeCell.ymlinc"
+    index: "5"
+    position: "eval(5*$width/6),0"
+- widget:
+    backgroundColorSelected: "$backgroundColorSelected"
+    enableWrapAround: "1"
+    foregroundColorSelected: "$foregroundColorSelected"
+    itemCornerRadiusSelected: "$radius_item"
+    position: "eval(0*$width/6),206"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "eval($width/6),eval(($height-206)/140*140)"
+    source: "list0"
+    transparent: "1"
+    children:
+      - xmlinc:
+          file: "screenpart_EventCell.ymlinc"
+- widget:
+    backgroundColorSelected: "$backgroundColorSelected"
+    enableWrapAround: "1"
+    foregroundColorSelected: "$foregroundColorSelected"
+    itemCornerRadiusSelected: "$radius_item"
+    position: "eval(1*$width/6),206"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "eval($width/6),eval(($height-206)/140*140)"
+    source: "list1"
+    transparent: "1"
+    children:
+      - xmlinc:
+          file: "screenpart_EventCell.ymlinc"
+- widget:
+    backgroundColorSelected: "$backgroundColorSelected"
+    enableWrapAround: "1"
+    foregroundColorSelected: "$foregroundColorSelected"
+    itemCornerRadiusSelected: "$radius_item"
+    position: "eval(2*$width/6),206"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "eval($width/6),eval(($height-206)/140*140)"
+    source: "list2"
+    transparent: "1"
+    children:
+      - xmlinc:
+          file: "screenpart_EventCell.ymlinc"
+- widget:
+    backgroundColorSelected: "$backgroundColorSelected"
+    enableWrapAround: "1"
+    foregroundColorSelected: "$foregroundColorSelected"
+    itemCornerRadiusSelected: "$radius_item"
+    position: "eval(3*$width/6),206"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "eval($width/6),eval(($height-206)/140*140)"
+    source: "list3"
+    transparent: "1"
+    children:
+      - xmlinc:
+          file: "screenpart_EventCell.ymlinc"
+- widget:
+    backgroundColorSelected: "$backgroundColorSelected"
+    enableWrapAround: "1"
+    foregroundColorSelected: "$foregroundColorSelected"
+    itemCornerRadiusSelected: "$radius_item"
+    position: "eval(4*$width/6),206"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "eval($width/6),eval(($height-206)/140*140)"
+    source: "list4"
+    transparent: "1"
+    children:
+      - xmlinc:
+          file: "screenpart_EventCell.ymlinc"
+- widget:
+    backgroundColorSelected: "$backgroundColorSelected"
+    enableWrapAround: "1"
+    foregroundColorSelected: "$foregroundColorSelected"
+    itemCornerRadiusSelected: "$radius_item"
+    position: "eval(5*$width/6),206"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "eval($width/6),eval(($height-206)/140*140)"
+    source: "list5"
+    transparent: "1"
+    children:
+      - xmlinc:
+          file: "screenpart_EventCell.ymlinc"

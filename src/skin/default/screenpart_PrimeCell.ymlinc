@@ -2,7 +2,7 @@
 - widget:
     alphatest: "blend"
     name: "picon$index"
-    position: "5,65"
+    position: "5,0"
     scaleFlags: "scaleCenter"
     size: "80,50"
 
@@ -11,16 +11,16 @@
     alphatest: "blend"
     cornerRadius: "$radius_poster"
     name: "programpix$index"
-    position: "115,65"
+    position: "115,0"
     scaleFlags: "scaleCenter"
-    size: "196,132"
+    size: "190,132"
 
 # channel name
 - widget:
     font: "$md_label_medium"
     foregroundColor: "md_key_yellow"
     name: "channel$index"
-    position: "5,115"
+    position: "5,50"
     size: "110,55"
     transparent: "1"
     valign: "center"
@@ -30,7 +30,7 @@
     font: "$md_label_medium"
     foregroundColor: "md_key_yellow"
     name: "time$index"
-    position: "5,170"
+    position: "5,105"
     size: "110,30"
     transparent: "1"
     valign: "bottom"
@@ -40,6 +40,6 @@
     font: "$md_title_medium_emphasized"
     foregroundColor: "md_key_yellow"
     name: "description$index"
-    position: "5,210"
-    size: "306,55"
+    position: "5,145"
+    size: "300,55"
     transparent: "1"

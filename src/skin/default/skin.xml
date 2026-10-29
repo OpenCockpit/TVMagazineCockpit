@@ -44,144 +44,142 @@
 	</fonts>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="TVMagazineCockpit" position="fill" resolution="1920,1080">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="4,4" size="1912,1071" zPosition="-11"/>
-		<eLabel backgroundColor="md_surface" cornerRadius="14" position="6,76" size="1908,927" zPosition="-10"/>
-		<eLabel backgroundColor="md_surface_container_high" position="28,4" size="1864,2" zPosition="-7"/>
-		<eLabel backgroundColor="md_surface_container_high" position="4,28" size="2,982" zPosition="-7"/>
-		<eLabel backgroundColor="md_surface_container_high" position="1914,28" size="2,982" zPosition="-7"/>
-		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold;18" pathForegroundColor="md_primary" position="24,7" size="1700,66" titleFont="Bold;28" titleForegroundColor="md_primary" titleSingleFont="Bold;42" transparent="1"/>
-		<widget backgroundColor="md_shadow" font="Bold;42" foregroundColor="md_on_surface" halign="right" position="1754,4" render="Label" size="120,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="20">
+		<eLabel backgroundColor="md_surface" cornerRadius="14" position="6,66" size="1908,947" zPosition="-10"/>
+		<widget backgroundColor="md_surface_container_low" font="Bold;36" foregroundColor="md_on_surface" halign="right" position="1778,6" render="Label" size="120,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="20">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_red.png,key_green:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_green.png,key_yellow:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_yellow.png,key_blue:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_blue.png,key_play:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_play.png,key_info:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_info.png,key_help:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_help.png,key_pvr:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_pvr.png,key_menu:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_menu.png,key_text:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,VKeyIcon:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,key_previous:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_prev.png,key_next:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_next.png,key_left:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_left.png,key_right:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_right.png,key_0:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_0.png" position="24,1024" size="1872,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
-		<widget font="Regular;20" halign="right" name="day_selector" position="1284,26" size="420,30" transparent="1" valign="center" zPosition="2"/>
-		<widget alphatest="blend" name="picon0" position="17,86" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix0" position="127,86" scaleFlags="scaleCenter" size="196,132"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel0" position="17,136" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time0" position="17,191" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description0" position="17,231" size="306,55" transparent="1"/>
-		<widget alphatest="blend" name="picon1" position="333,86" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix1" position="443,86" scaleFlags="scaleCenter" size="196,132"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel1" position="333,136" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time1" position="333,191" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description1" position="333,231" size="306,55" transparent="1"/>
-		<widget alphatest="blend" name="picon2" position="649,86" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix2" position="759,86" scaleFlags="scaleCenter" size="196,132"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel2" position="649,136" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time2" position="649,191" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description2" position="649,231" size="306,55" transparent="1"/>
-		<widget alphatest="blend" name="picon3" position="965,86" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix3" position="1075,86" scaleFlags="scaleCenter" size="196,132"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel3" position="965,136" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time3" position="965,191" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description3" position="965,231" size="306,55" transparent="1"/>
-		<widget alphatest="blend" name="picon4" position="1281,86" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix4" position="1391,86" scaleFlags="scaleCenter" size="196,132"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel4" position="1281,136" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time4" position="1281,191" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description4" position="1281,231" size="306,55" transparent="1"/>
-		<widget alphatest="blend" name="picon5" position="1597,86" scaleFlags="scaleCenter" size="80,50"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix5" position="1707,86" scaleFlags="scaleCenter" size="196,132"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel5" position="1597,136" size="110,55" transparent="1" valign="center"/>
-		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time5" position="1597,191" size="110,30" transparent="1" valign="bottom"/>
-		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description5" position="1597,231" size="306,55" transparent="1"/>
-		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="12,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="316,705" source="list0" transparent="1">
+		<eLabel backgroundColor="md_surface_container_high" position="30,7" size="1748,60" zPosition="19"/>
+		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold;18" pathForegroundColor="md_primary" position="30,6" size="1748,60" titleFont="Bold;28" titleForegroundColor="md_primary" titleSingleFont="Bold;42" transparent="1" zPosition="20"/>
+		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_red.png,key_green:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_green.png,key_yellow:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_yellow.png,key_blue:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_blue.png,key_play:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_play.png,key_info:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_info.png,key_help:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_help.png,key_pvr:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_pvr.png,key_menu:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_menu.png,key_text:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,VKeyIcon:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,key_previous:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_prev.png,key_next:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_next.png,key_left:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_left.png,key_right:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_right.png,key_0:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_0.png" position="30,1027" size="1860,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
+		<widget font="Regular;20" halign="right" name="day_selector" position="1284,6" size="420,60" transparent="1" valign="center" zPosition="21"/>
+		<widget alphatest="blend" name="picon0" position="35,90" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix0" position="145,90" scaleFlags="scaleCenter" size="190,132"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel0" position="35,140" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time0" position="35,195" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description0" position="35,235" size="300,55" transparent="1"/>
+		<widget alphatest="blend" name="picon1" position="345,90" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix1" position="455,90" scaleFlags="scaleCenter" size="190,132"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel1" position="345,140" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time1" position="345,195" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description1" position="345,235" size="300,55" transparent="1"/>
+		<widget alphatest="blend" name="picon2" position="655,90" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix2" position="765,90" scaleFlags="scaleCenter" size="190,132"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel2" position="655,140" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time2" position="655,195" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description2" position="655,235" size="300,55" transparent="1"/>
+		<widget alphatest="blend" name="picon3" position="965,90" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix3" position="1075,90" scaleFlags="scaleCenter" size="190,132"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel3" position="965,140" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time3" position="965,195" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description3" position="965,235" size="300,55" transparent="1"/>
+		<widget alphatest="blend" name="picon4" position="1275,90" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix4" position="1385,90" scaleFlags="scaleCenter" size="190,132"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel4" position="1275,140" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time4" position="1275,195" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description4" position="1275,235" size="300,55" transparent="1"/>
+		<widget alphatest="blend" name="picon5" position="1585,90" scaleFlags="scaleCenter" size="80,50"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix5" position="1695,90" scaleFlags="scaleCenter" size="190,132"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="channel5" position="1585,140" size="110,55" transparent="1" valign="center"/>
+		<widget font="Regular;20" foregroundColor="md_key_yellow" name="time5" position="1585,195" size="110,30" transparent="1" valign="bottom"/>
+		<widget font="Bold;30" foregroundColor="md_key_yellow" name="description5" position="1585,235" size="300,55" transparent="1"/>
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="30,296" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="310,700" source="list0" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(316,141), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
+					MultiContentEntryText(pos=(0,0), size=(310,140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,90), size=(1860/6-65-5,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 					MultiContentEntryText(pos=(65,114), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
 				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;28")],
-				"itemHeight": 141,
+				"itemHeight": 140,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="328,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="316,705" source="list1" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="340,296" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="310,700" source="list1" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(316,141), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
+					MultiContentEntryText(pos=(0,0), size=(310,140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,90), size=(1860/6-65-5,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 					MultiContentEntryText(pos=(65,114), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
 				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;28")],
-				"itemHeight": 141,
+				"itemHeight": 140,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="644,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="316,705" source="list2" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="650,296" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="310,700" source="list2" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(316,141), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
+					MultiContentEntryText(pos=(0,0), size=(310,140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,90), size=(1860/6-65-5,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 					MultiContentEntryText(pos=(65,114), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
 				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;28")],
-				"itemHeight": 141,
+				"itemHeight": 140,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="960,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="316,705" source="list3" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="960,296" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="310,700" source="list3" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(316,141), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
+					MultiContentEntryText(pos=(0,0), size=(310,140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,90), size=(1860/6-65-5,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 					MultiContentEntryText(pos=(65,114), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
 				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;28")],
-				"itemHeight": 141,
+				"itemHeight": 140,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1276,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="316,705" source="list4" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1270,296" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="310,700" source="list4" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(316,141), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
+					MultiContentEntryText(pos=(0,0), size=(310,140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,90), size=(1860/6-65-5,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 					MultiContentEntryText(pos=(65,114), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
 				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;28")],
-				"itemHeight": 141,
+				"itemHeight": 140,
 				"selectionEnabled": False
 			}
 			</convert>
 		</widget>
-		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1592,292" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="316,705" source="list5" transparent="1">
+		<widget backgroundColor="md_surface" backgroundColorSelected="md_surface_container_high" enableWrapAround="1" foregroundColor="md_on_surface" foregroundColorSelected="md_primary" itemCornerRadiusSelected="6" position="1580,296" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="5" selectionFrame="none" size="310,700" source="list5" transparent="1">
 			<convert type="COCTemplatedMultiContentEx">
 			{
 				"template": [
-					MultiContentEntryText(pos=(0,0), size=(316,141), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
+					MultiContentEntryText(pos=(0,0), size=(310,140), font=1, flags=RT_VALIGN_CENTER, text="", border_width=1, border_color="md_outline_variant"),
 					MultiContentEntryText(pos=(5,5), size=(55,25), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
 					MultiContentEntryText(pos=(5,32), size=(55,20), font=2, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=9),
 					MultiContentEntryText(pos=(65,5), size=(245,75), font=0, flags=RT_HALIGN_LEFT|RT_WRAP, text=1),
-					MultiContentEntryText(pos=(65,90), size=(245,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
+					MultiContentEntryText(pos=(65,90), size=(1860/6-65-5,25), font=1, flags=RT_HALIGN_LEFT, text=2, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 					MultiContentEntryText(pos=(65,114), size=(245,25), font=1, flags=RT_HALIGN_LEFT|RT_WRAP, text=3, color="md_on_surface_variant", color_sel="md_on_surface_variant"),
 				],
 				"fonts": [parseFont("Bold;30"), parseFont("Regular;20"), parseFont("Bold;28")],
-				"itemHeight": 141,
+				"itemHeight": 140,
 				"selectionEnabled": False
 			}
 			</convert>
@@ -190,17 +188,17 @@
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="EventDetails" position="fill" resolution="1920,1080">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="252,111" size="1416,838" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="254,173" size="1412,714" zPosition="-10"/>
-		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_red.png,key_green:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_green.png,key_yellow:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_yellow.png,key_blue:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_blue.png,key_play:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_play.png,key_info:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_info.png,key_help:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_help.png,key_pvr:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_pvr.png,key_menu:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_menu.png,key_text:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,VKeyIcon:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,key_previous:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_prev.png,key_next:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_next.png,key_left:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_left.png,key_right:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_right.png,key_0:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_0.png" position="272,901" size="1376,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
-		<widget backgroundColor="md_surface_container_low" font="Bold;36" foregroundColor="md_on_surface" halign="right" position="1230,113" render="Label" size="420,64" source="global.CurrentTime" transparent="1" valign="center" zPosition="20">
+		<widget backgroundColor="md_surface_container_low" font="Bold;36" foregroundColor="md_on_surface" halign="right" position="1530,113" render="Label" size="120,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="20">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel backgroundColor="md_surface_container_high" position="272,114" size="1156,60" zPosition="19"/>
-		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold;18" pathForegroundColor="md_primary" position="272,113" size="1156,60" titleFont="Bold;28" titleForegroundColor="md_primary" titleSingleFont="Bold;42" transparent="1" zPosition="20"/>
-		<widget alphatest="on" name="picon" position="282,196" scale="1" scaleFlags="scaleCenter" size="100,100"/>
-		<widget font="Regular;34" name="title" position="412,196" size="800,43" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;30" name="subtitle" position="412,249" size="800,37" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;30" name="duration" position="412,296" size="300,37" transparent="1" valign="center" zPosition="1"/>
-		<widget font="Regular;30" name="description" position="282,361" size="930,490" transparent="1"/>
-		<widget alphatest="blend" cornerRadius="6" name="programpix" position="1238,196" scaleFlags="scaleCenter" size="400,300"/>
+		<eLabel backgroundColor="md_surface_container_high" position="278,114" size="1252,60" zPosition="19"/>
+		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold;18" pathForegroundColor="md_primary" position="278,113" size="1252,60" titleFont="Bold;28" titleForegroundColor="md_primary" titleSingleFont="Bold;42" transparent="1" zPosition="20"/>
+		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_red.png,key_green:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_green.png,key_yellow:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_yellow.png,key_blue:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_blue.png,key_play:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_play.png,key_info:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_info.png,key_help:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_help.png,key_pvr:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_pvr.png,key_menu:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_menu.png,key_text:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,VKeyIcon:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_text.png,key_previous:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_prev.png,key_next:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_next.png,key_left:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_left.png,key_right:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_right.png,key_0:/usr/lib/enigma2/python/Plugins/Extensions/TVMagazineCockpit/skin/images/buttons/key_0.png" position="278,901" size="1364,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
+		<widget alphatest="on" name="picon" position="278,203" scale="1" scaleFlags="scaleCenter" size="100,100"/>
+		<widget font="Regular;34" name="title" position="408,203" size="800,43" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;30" name="subtitle" position="408,256" size="800,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;30" name="duration" position="408,303" size="300,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;30" name="description" position="278,377" size="930,490" transparent="1"/>
+		<widget alphatest="blend" cornerRadius="6" name="programpix" position="1242,203" scaleFlags="scaleCenter" size="400,300"/>
 	</screen>
 </skin>
