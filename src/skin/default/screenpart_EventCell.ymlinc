@@ -38,12 +38,12 @@ convert:
       # Description
       - text:
           position: "65,90"
-          size: "$width/6-65-5,25"
+          size: "$width/6-65-10,25"
           font: "$md_label_medium"
           flags: RT_HALIGN_LEFT
           value: 2
           color: "md_on_surface_variant"
-          color_sel: "md_on_surface_variant"
+          color_sel: "md_inverse_on_surface"
       # Country & Year
       - text:
           position: "65,114"
@@ -52,4 +52,4 @@ convert:
           flags: RT_HALIGN_LEFT|RT_WRAP
           value: 3
           color: "md_on_surface_variant"
-          color_sel: "md_on_surface_variant"
+          color_sel: "md_inverse_on_surface"
