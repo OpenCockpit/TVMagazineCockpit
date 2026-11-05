@@ -10,6 +10,7 @@ from Components.ActionMap import ActionMap
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Button import Button
+from Components.Sources.StaticText import StaticText
 from Components.config import config
 from .EventDetails import EventDetails
 from .More import More
@@ -66,12 +67,10 @@ class TVMagazineCockpit(Screen, More, Picture):
         self["key_green"] = Button(_("20:15"))
         self["key_yellow"] = Button(_("22:00"))
         self["key_blue"] = Button(_("Now"))
-        # The skin binds key_menu/key_info via plain name="..." (GUIComponent
-        # style, same as the Button widgets above) rather than source=/render=,
-        # so these need to be Buttons too - a Source like StaticText doesn't
-        # bind that way and silently fails to render.
-        self["key_menu"] = Button("Menu")
-        self["key_info"] = Button("Info")
+        # The buttons bar (ScreenButtonsBar addon of the window frame) shows an action key such as MENU or INFO only if
+        # its source has a true "boolean": a StaticText with text does, a Button does not.
+        self["key_menu"] = StaticText(_("MENU"))
+        self["key_info"] = StaticText(_("INFO"))
 
         for i in range(COLS):
             self[f"list{i}"] = EventList()

@@ -9,7 +9,7 @@
     font: "$md_title_large"
     name: "title"
     position: "130,0"
-    size: "800,43"
+    size: "$width-560,43"
     transparent: "1"
     valign: "center"
     zPosition: "1"
@@ -17,7 +17,7 @@
     font: "$md_body_large"
     name: "subtitle"
     position: "130,53"
-    size: "800,37"
+    size: "$width-560,37"
     transparent: "1"
     valign: "center"
     zPosition: "1"
@@ -32,8 +32,8 @@
 - widget:
     font: "$md_body_large"
     name: "description"
-    position: "0,$height-490"
-    size: "930,490"
+    position: "0,174"
+    size: "$width-434,$height-174"
     transparent: "1"
 - widget:
     alphatest: "blend"
