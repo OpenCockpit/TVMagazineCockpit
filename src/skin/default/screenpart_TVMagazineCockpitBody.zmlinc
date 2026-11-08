@@ -1,0 +1,26 @@
+- for:
+    var: "$i"
+    range: [0, 5]
+    body:
+      - xmlinc:
+          file: "screenpart_PrimeCell.ymlinc"
+          index: "$i"
+          position: "eval($i*$width/6),0"
+- for:
+    var: "$i"
+    range: [0, 5]
+    body:
+      - widget:
+          backgroundColorSelected: "$backgroundColorSelected"
+          enableWrapAround: "1"
+          foregroundColorSelected: "$foregroundColorSelected"
+          itemCornerRadiusSelected: "$radius_item"
+          position: "eval($i*$width/6),206"
+          render: "Listbox"
+          scrollbarMode: "showNever"
+          size: "eval($width/6),eval(($height-206)/140*140)"
+          source: "list$i"
+          transparent: "1"
+          children:
+            - xmlinc:
+                file: "screenpart_EventCell.ymlinc"

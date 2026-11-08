@@ -1,0 +1,89 @@
+# Copyright (C) 2018-2026 by xcentaurix
+# License: GNU General Public License v3.0
+
+
+import os
+from time import time, strftime, localtime
+from twisted.internet import threads
+from Components.config import config
+from .ChannelUtils import readChannelDict, readChannelList
+from .TVMagazineData import TVMagazineData
+from .FileUtils import createDirectory, deleteDirectory
+from .WebRequests import WebRequests
+from .Picture import shrinkPicture
+from .CacheUtils import saveEvents
+from .Index import idx
+from .DateTimeUtils import timestamp_to_day_int
+from .EventUtils import find_time_event_index
+from .Debug import logger
+
+
+class Cache:
+    def __init__(self):
+        logger.info("...")
+        self.events = {}
+        self.channel_dict = readChannelDict()
+        self.channel_list = readChannelList(self.channel_dict)
+        self.date_str = strftime("%Y-%m-%d", localtime(int(time())))
+        self.tvmagazine_data = TVMagazineData(self.channel_dict)
+        self.temp_dir = os.path.join(
+            config.plugins.tvmagazinecockpit.temp_dir.value, self.date_str)
+        self.cache_path = os.path.join(self.temp_dir, "events.json")
+        self.data_source_id = config.plugins.tvmagazinecockpit.data_source.value + "_id"
+        createDirectory(self.temp_dir)
+
+    def downloadEvents(self):
+        if not os.path.exists(self.cache_path):
+            logger.debug("channel_list: %s", self.channel_list)
+            self.tvmagazine_data.downloadEvents(
+                self.date_str,
+                self.channel_list,
+                self.events,
+                self.downloadEventsCallback
+            )
+
+    def downloadEventsCallback(self, events):
+        # Called on the reactor (GUI) thread. Fetching the detail pages and
+        # pictures is blocking network I/O, so do it in a worker thread, else
+        # the GUI freezes (spinner) for the whole download.
+        logger.debug("events: %s", events)
+        deferred = threads.deferToThread(self.downloadPictures, events)
+        deferred.addErrback(self.downloadPicturesError)
+
+    def downloadPicturesError(self, failure):
+        logger.error("download pictures failed: %s", failure.getErrorMessage())
+
+    def downloadPictures(self, events):
+        start_time = timestamp_to_day_int(time()) + 20 * 3600 + 15 * 60
+
+        events_of_the_day = events.get(self.date_str, {})
+        for service_ref in events_of_the_day:
+            channel_id = self.channel_dict.get(
+                service_ref, {}).get(self.data_source_id, "")
+            event_list = events_of_the_day.get(service_ref, {})
+            i = find_time_event_index(event_list, start_time)
+            if i != -1:
+                event = event_list[i]
+                event = self.tvmagazine_data.getDetailedEvent(event)
+                if event:
+                    # Kept with the cached events (saved below): the detailed event has the poster's address and the NEU flag,
+                    # which the screen otherwise fetches from the internet again every time it opens, and the posters only
+                    # show once these requests are answered.
+                    event_list[i] = event
+                    url = event[idx["photo_url"]]
+                    ident = f"{event[idx['startTime']]}-{channel_id}"
+                    path = os.path.join(
+                        self.temp_dir, "programpix-" + ident + ".jpg")
+                    # as showPicture does: no picture, or one that is already here (two channels can show the same event)
+                    if url and not url.endswith("None") and not os.path.isfile(path):
+                        WebRequests().downloadFile(url, path)
+                        shrinkPicture(path)
+        saveEvents(events)
+
+    def cleanup(self):
+        logger.info("Cleaning up old cache directories...")
+        adir = os.path.dirname(self.temp_dir)
+        for name in os.listdir(adir):
+            path = os.path.join(adir, name)
+            if os.path.isdir(path) and name != self.date_str:
+                deleteDirectory(path)
