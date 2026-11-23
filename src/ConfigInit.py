@@ -32,7 +32,5 @@ config.plugins.tvmagazinecockpit.temp_dir = ConfigDirectory(
     default="/media/hdd/TVC")
 config.plugins.tvmagazinecockpit.data_source = ConfigSelection(
     default="tvfa", choices=data_source_choices)
-config.plugins.tvmagazinecockpit.piconspath = ConfigDirectory(
-    default="/usr/share/enigma2/picon/")
 config.plugins.tvmagazinecockpit.bouquet = ConfigSelection(
     default="", choices=[("", _("Auto (bouquet of currently playing service)"))] + getTVBouquets())

@@ -6,7 +6,7 @@ from time import strftime, localtime
 from enigma import eTimer, gPixmapPtr
 from Components.config import config
 from .Debug import logger
-from .PiconUtils import getPicon
+from .ServiceUtils import getPicon
 from .ConfigInit import ROWS
 from .Index import idx
 from .EventUtils import find_time_event_index

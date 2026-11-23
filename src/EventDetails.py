@@ -14,7 +14,7 @@ from Components.config import config
 from enigma import eServiceReference
 # from StreamPlayer import StreamPlayer
 from .Debug import logger
-from .PiconUtils import getPicon
+from .ServiceUtils import getPicon
 from .__init__ import _
 from .Picture import Picture
 from .CockpitPlayer import CockpitPlayer
