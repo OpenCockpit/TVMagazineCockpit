@@ -88,7 +88,7 @@ def datetime_to_epoch(datetime_str):
         is_summer_time = False
 
         # Simplified DST check - this is an approximation
-        if dt.month > 3 and dt.month < 10:
+        if 3 < dt.month < 10:
             is_summer_time = True
         elif dt.month == 3:
             # Check if it's after the last Sunday of March
